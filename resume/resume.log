@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.7.6)  19 JAN 2022 21:21
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.7.6)  19 JAN 2022 21:41
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -208,10 +208,8 @@ with kernel methods
 \c@bookmark@seq@number=\count198
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
-Package: rerunfilecheck 2019/1.0a Emulation of the original atvery packag
-e
-with kernel methods
-)
+Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
+
 (/usr/local/texlive/2021/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
 Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
@@ -237,15 +235,14 @@ Package: babel 2021/03/24 3.56 The Babel package
 
 (/usr/local/texlive/2021/texmf-dist/tex/generic/babel/babel.def
 File: babel.def 2021/03/24 3.56 Babel common definitions
-\babel@savecnt=\count197
+\babel@savecnt=\count199
 \U@D=\dimen149
 \l@babelnohyphens=\language87
 
-(/usr/local/texlive/2021/texmf-dist/tex/generic/babel/xebabel.def
-(/usr/local/texlive/2021/texmf-dist/tex/generic/babel/txtbabel.def))
+(/usr/local/texlive/2021/texmf-dist/tex/generic/babel/txtbabel.def)
 \bbl@readstream=\read3
 )
-\bbl@dirlevel=\count198
+\bbl@dirlevel=\count266
 
 (/usr/local/texlive/2021/texmf-dist/tex/generic/babel-english/english.ldf
 Language: english 2017/06/06 v3.3r English support from the babel system
@@ -262,66 +259,50 @@ Package: tabularx 2020/01/15 v2.11c `tabularx' package (DPC)
 (/usr/local/texlive/2021/texmf-dist/tex/latex/tools/array.sty
 Package: array 2020/10/01 v2.5c Tabular extension package (FMi)
 \col@sep=\dimen150
-\ar@mcellbox=\box50
+\ar@mcellbox=\box49
 \extrarowheight=\dimen151
 \NC@list=\toks21
 \extratabsurround=\skip63
 \backup@length=\skip64
-\ar@cellbox=\box51
+\ar@cellbox=\box50
 )
 \TX@col@width=\dimen152
 \TX@old@table=\dimen153
 \TX@old@col=\dimen154
 \TX@target=\dimen155
 \TX@delta=\dimen156
-\TX@cols=\count199
+\TX@cols=\count267
 \TX@ftn=\toks22
 )
-(/usr/local/texlive/2021/texmf-dist/tex/generic/pdftex/glyphtounicode.tex
-! Undefined control sequence.
-l.7 \pdfglyphtounicode
-                      {A}{0041}
-? 
-! Interruption.
-<to be read again> 
-                   {
-l.7 \pdfglyphtounicode{
-                       A}{0041}
-? `
-Type <return> to proceed, S to scroll future error messages,
-R to run without stopping, Q to run quietly,
-I to insert something, E to edit your file,
-H for help, X to quit.
-? 
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pdftex/glyphtounicode.tex)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2021-03-18 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count268
+\l__pdf_internal_box=\box51
+)
+(./resume.aux)
+\openout1 = `resume.aux'.
 
-! LaTeX Error: Missing \begin{document}.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.7 \pdfglyphtounicode{A
-                        }{0041}
-? 
-! Undefined control sequence.
-l.8 \pdfglyphtounicode
-                      {AE}{00C6}
-? 
-! Undefined control sequence.
-l.9 \pdfglyphtounicode
-                      {AEacute}{01FC}
-? exit
- 
-Here is how much of TeX's memory you used:
- 9021 strings out of 476919
- 130667 string characters out of 5821841
- 454959 words of memory out of 5000000
- 28943 multiletter control sequences out of 15000+600000
- 403798 words of font info for 29 fonts, out of 8000000 for 9000
- 1348 hyphenation exceptions out of 8191
- 71i,0n,77p,215b,40s stack positions out of 5000i,500n,10000p,200000b,80000s
-No pages of output.
--dist/tex/context/base/mkii/supp-pdf.mkii
+(/usr/local/texlive/2021/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count269
 \scratchdimen=\dimen157
@@ -406,7 +387,7 @@ Here is how much of TeX's memory you used:
 usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></u
 sr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr
 /local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on resume.pdf (1 page, 104665 bytes).
+Output written on resume.pdf (1 page, 104660 bytes).
 PDF statistics:
  80 PDF objects out of 1000 (max. 8388607)
  62 compressed objects within 1 object stream
