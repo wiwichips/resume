@@ -3,4 +3,6 @@ resume.aux
 resume.out
 resume.synctex.gz
 resume.dvi
+resume.fdb_latexmk
+resume.fls
 .DS_Store
