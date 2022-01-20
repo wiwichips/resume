@@ -1,168 +1,218 @@
-%!TEX TS-program = xelatex
-%!TEX encoding = UTF-8 Unicode
-% Awesome CV LaTeX Template
-%
-% This template has been downloaded from:
-% https://github.com/posquit0/Awesome-CV
-%
-% Author:
-% Claud D. Park <posquit0.bj@gmail.com>
-% http://www.posquit0.com
-%
-% Template license:
-% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-%
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     Configuration
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%% Themes: Awesome-CV
-\documentclass[]{awesome-cv}
-\usepackage{textcomp}
-%%% Override a directory location for fonts(default: 'fonts/')
-%\fontdir[fonts/]
+\begin{document}
 
-%%% Configure a directory location for sections
-\newcommand*{\sectiondir}{resume/}
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
 
-%%% Override color
-% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
-%                 awesome-nephritis, awesome-concrete, awesome-darknight
-%% Color for highlight
-% Define your custom color if you don't like awesome colors
-%\colorlet{awesome}{awesome-red}
-%\definecolor{awesome}{HTML}{CA63A8}
-%% Colors for text
-%\definecolor{darktext}{HTML}{414141}
-%\definecolor{text}{HTML}{414141}
-%\definecolor{graytext}{HTML}{414141}
-%\definecolor{lighttext}{HTML}{414141}
-
-%%% Override a separator for social informations in header(default: ' | ')
-%\headersocialsep[\quad\textbar\quad]
-    \begin{document}
-    
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     Profile
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{center}
-	\headerfirstnamestyle{} \headerlastnamestyle{Will Pringle} \\
-	\vspace{2mm}
-	{\faEnvelope\ willkantorpringle@gmail.com} | {\faGithub\ \href{https://github.com/wiwichips}{⠀github.com/wiwichips⠀}} | {\faLinkedin\ \href{https://www.linkedin.com/in/will-pringle/}{linkedin.com/in/will-pringle⠀}}
+    \textbf{\Huge \scshape Will Pringle} \\ \vspace{1pt}
+    \small \href{mailto:willkantorpringle@gmail.com}{\underline{willkantorpringle@gmail.com}} $|$ 
+    \href{https://www.linkedin.com/in/will-pringle/}{\underline{linkedin.com/in/will-pringle}} $|$
+    \href{tel:+15199940408}{\underline{+1(519)994-0408}}
+    
 \end{center}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     Education
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\cvsection{Education}
-\begin{cventries}
-	\cventry
-	{Bachelors in Software Engineering}
-	{University of Guelph}
-	{Guelph, Ontario}
-	{September 2018 – April 2023}
-	{GPA: 3.65/4.0}
-\end{cventries}
 
-\vspace{-2mm}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     Experience
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\cvsection{Experience}
-\begin{cventries}
-	\cventry
-	{Software Engineer}
-	{Wave}
-	{Toronto, Canada}
-	{September 2021 – December 2021}
-	{\begin{cvitems}
-		\item {Implemented cached GraphQL queries for over 140 operations reducing network traffic by up to 93\%}
-    \item {Utilized Datadog, SumoLogic, and AWS Console to investigate the performance impact of changes made to Wave's API}
-    \item {Improved company understanding of GraphQL technology through presentations on important libraries and tech}
-    \item {Maintained Wave's Django and NodeJS API services}
-		\end{cvitems}}
-  \cventry
-	{Software Developer}
-	{Kings Distributed Systems}
-	{Kingston, Canada}
-	{January 2021 – August 2021}
-	{\begin{cvitems}
-    \item {Contributed to the Distributed Compute Protocol NodeJS microservices and MySQL database}
-		\item {Implemented payment commissions, a feature that transfers a specified fraction of a payment to a separate account, allowing KingsDS to make revenue for every workload sent over their network}
-		\item {Fixed critical race condition bugs in the network transport layer of the system improving security}
-		\item {Re-branded a client facing frontend portal for a research study with over 100 participants using the Distributed Compute Protocol}
-		\end{cvitems}}
-	\cventry
-	{Software Developer}
-	{Ontario Ministry of Finance}
-	{Toronto, Canada}
-	{June 2020 – December 2020}
-	{\begin{cvitems}
-		\item {Automated data entry and modeling using Python reducing time for a critical task by 99\%}
-		\item {Wrote an internal Python and R package to help economists analyze tax data used to write policy that affects millions of Ontarians}
-		\item {Developed scripts to parse and analyze Excel data into a usable format using libraries such as Pandas and Numpy}
-		\end{cvitems}}
-\end{cventries}
-\cvsection{Skills}
-\begin{cventries}
-	\cventry
-	{}
-	{\def\arraystretch{1.15}{\begin{tabular}{ l l }
-		Programming Languages:  & {\skill{ JavaScript, C, Shell / Bash, Python, Kotlin, Java, SQL, R, Perl}} \\
-		Technologies:  & {\skill{ Node.js, Linux, Android Studio, GraphQL, AWS, Datadog, Express.js, Tensorflow}} \\
-		\end{tabular}}}
-	{}
-	{}
-	{}
-\end{cventries}
 
-\vspace{-7mm}
-\cvsection{Projects}
-\begin{cventries}
-	\cventry
-  {\begin{cvitems}
-  	\item{Utilized the Distributed Compute Protocol to distribute Clang x86 compilation of C code}
-  \end{cvitems}}
-	{JADCC (Distributed Clang Compiler)}
-	{Webassembly, JavaScript, NodeJS}
-	{https://github.com/wiwichips/jadcc}
-	{}
-	
-	\vspace{-5mm}
-	\cventry
-  {\begin{cvitems}
-    \item{Led a team to create an open source simple barcode scanning and inventory management system}
-    \item{Implemented a frontend search system that queries a database for items previously scanned}
-  \end{cvitems}}
-	{ScanX}
-	{Kotlin, Java, Android Studio, Python}
-	{https://github.com/wiwichips/ScanX}
-	{}
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Guelph}{Sep. 2018 -- Present}
+      {Bachelor of Computing in Software Engineering, Area of Application in Business Economics}{Guelph, ON}
+      \resumeItemListStart
+            \resumeItem{GPA: 3.65 or 85.16\%}
+            \resumeItem{Expected graduation date: April 2023}
+            \resumeItem{Deans Honours List in Fall 2018 and Winter 2020}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+  
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Javascript, C, Shell/Bash, Python, Java, Kotlin, SQL, R, Perl, GraphQL, WebAssembly} \\
+     \textbf{Frameworks}{: Node.js, Express.js, Apollo, Django} \\
+     \textbf{Developer Tools}{: Git, Docker, AWS, Android Studio, Datadog, SumoLogic} \\
+     \textbf{Libraries}{: Tensorflow, pandas, NumPy} \\
+    }}
+ \end{itemize}
+  
+%-----------WORK EXPERIENCE-----------
+\section{Work Experience}
+  \resumeSubHeadingListStart
+  
+  \resumeSubheading
+      {Software Engineer}{September -- December 2021}
+      {Wave Financial Inc.}{Toronto, ON}
+      \resumeItemListStart 
+        \resumeItem{Implemented \href{https://www.apollographql.com/docs/apollo-server/performance/apq/}{\underline{APQs}} on an Apollo GraphQL server with 140+ queries, improving network performance by 93\%}
+         \resumeItem{Utilized Datadog, SumoLogic, and AWS console to investigate the impact of APQs on network traffic}
+         \resumeItem{Helped increase GraphQL literacy by contributing to an internal training project and presenting at demos}
+         \resumeItem{Fixed bugs and added features to Wave's Django and Node.js APIs}
+         \resumeItem{Participated in Javascript, UI, and Reactive Systems working group meetings to learn about new technologies such as Kafka and the decision making process for adopting new technologies}
+      \resumeItemListEnd
+  
+  \resumeSubheading
+      {Software Developer}{January -- August 2021}
+      {Kings Distributed Systems}{Kingston, ON}
+      \resumeItemListStart
+        \resumeItem{Implemented a key feature that allows the company to take commission for selected compute jobs that are sent over their network}
+        \resumeItem{Fixed critical race condition bugs in the transport layer affecting session ID generation, improving network security}
+        \resumeItem{Re-branded a client facing frontend portal for a research study with 1000+ participants using DCP}
+        \resumeItem{Contributed to the Distributed Compute Protocol Node.js microservices and MySQL database}
+      \resumeItemListEnd
 
-	\vspace{-5mm}
-\end{cventries}
-\cvsection{Awards and Extracurriculars}
-\begin{cvhonors}
-	\cvhonor
-	{(First Place) Distributed Summer Hackathon}
-	{Collaborated in a team of two under a 36 hour period to develop Gunkstribute, a project that utilizes DCP\textquotesingle{}s highly distributed supercomputer to classify images in a large photo gallery efficiently}
-	{Distributed Compute Labs}
-	{August 2020}
-	\cvhonor
-	{(Second Place) Amazon Day Datapath}
-	{Competed to learn Amazon\textquotesingle{}s new query langugae Datapth to solve query related problems}
-	{Amazon}
-	{January 2019}
-	\cvhonor
-	{BCOMP Forum Student Organization - Founder}
-	{• Grew an online community of over 1300 Computer Science students to run events and collaborate}
-	{BCOMP}
-	{September 2018 - Present}
-  \cvhonor
-  {Hack The Job - Co-Founder}
-  {• Organized, marketed, and hosted two hackathons and conferences with over 180 participants \href{https://hackthejob.ca/}{https://hackthejob.ca/}}
-  {Hack the Job}
-  {April 2021 - Present}
-\end{cvhonors}
-\ 
+   \resumeSubheading
+      {Software Developer}{June -- December 2020}
+      {Ontario Ministry of Finance}{Toronto, ON}
+      \resumeItemListStart
+        \resumeItem{Automated data entry and modelling using Python, reducing time for a critical monthly task by 99\%}
+        \resumeItem{Wrote a package in Python and R that helps economists analyze data that is used to write Ontario's tax policies}
+        \resumeItem{Developed scripts using pandas and NumPy to parse, analyze, and export Excel data to be used in Jupyter Notebooks and RStudio}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+  
+  
+%-----------PROJECTS-----------
+\section{Projects}
+  \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{JADCC}}{\href{https://github.com/wiwichips/jadcc}{\underline{github.com/wiwichips/jadcc}}}
+          \resumeItemListStart
+             \resumeItem{Utilized \href{https://dcp.dev/}{\underline{DCP}} to write a distributed Clang compiler using WebAssembly, Javascript, and Node.js }
+          \resumeItemListEnd
+          
+      \resumeProjectHeading
+          {\textbf{ScanX}}{\href{https://github.com/wiwichips/ScanX}{\underline{github.com/wiwichips/ScanX}}}
+          \resumeItemListStart
+            \resumeItem{Contributed to the front-end Kotlin project for the barcode scanning and inventory management mobile app}
+          \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+
+%-----------EXTRACURRICULARS & AWARDS-----------
+\section{Extracurriculars \& Awards}
+  \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Hack the Job}}{April 2021 -- Present}
+          \resumeItemListStart
+             \resumeItem{Organizing and facilitating \href{https://hackthejob.ca}{\underline{hackathons and career events}} with 200+ participants from 10+ Canadian universities}
+          \resumeItemListEnd
+          
+      \resumeProjectHeading
+          {\textbf{Distributed Summer Hackathon: First Place}}{August 2020}
+          \resumeItemListStart
+             \resumeItem{Developed \href{https://github.com/wiwichips/gcb}{\underline{Gunkstribute}}, an app that utilizes DCP to classify images with Tensorflow, in 36 hours in a team of 2}
+          \resumeItemListEnd
+     
+     \resumeProjectHeading
+          {\textbf{BCOMP}}{September 2018 -- Present}
+          \resumeItemListStart
+             \resumeItem{Created an online community used by 1300+ Bachelor of Computing students at the University of Guelph to share class notes and collaborate with each other according the rules of the university}
+          \resumeItemListEnd
+          
+
+  \resumeSubHeadingListEnd
+    
+    
+
+ 
+
+%-------------------------------------------
 \end{document}
