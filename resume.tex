@@ -1,6 +1,6 @@
 %-------------------------
 % Resume in Latex
-% Author : Jake Gutierrez
+% Author : Will Pringle
 % Based off of: https://github.com/sb2nov/resume
 % License : MIT
 %------------------------
@@ -89,21 +89,14 @@
 %-------------------------------------------
 %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
 \begin{document}
 
 %----------HEADING----------
-% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
-%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
-% \end{tabular*}
-
 \begin{center}
     \textbf{\Huge \scshape Will Pringle} \\ \vspace{1pt}
     \small \href{mailto:willkantorpringle@gmail.com}{\underline{willkantorpringle@gmail.com}} $|$ 
     \href{https://www.linkedin.com/in/will-pringle/}{\underline{linkedin.com/in/will-pringle}} $|$
     \href{tel:+15199940408}{\underline{+1(519)994-0408}}
-    
 \end{center}
 
 
@@ -114,39 +107,40 @@
       {University of Guelph}{Sep. 2018 -- Present}
       {Bachelor of Computing in Software Engineering, Area of Application in Business Economics}{Guelph, ON}
       \resumeItemListStart
-            \resumeItem{GPA: 3.65 or 85.16\%}
-            \resumeItem{Expected graduation date: April 2023}
-            \resumeItem{Deans Honours List in Fall 2018 and Winter 2020}
+        \resumeItem{GPA: 3.65 or 85.16\%}
+        \resumeItem{Expected graduation date: April 2023}
+        \resumeItem{Deans Honours List in Fall 2018 and Winter 2020}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
-  
+
+
 %-----------PROGRAMMING SKILLS-----------
 \section{Technical Skills}
- \begin{itemize}[leftmargin=0.15in, label={}]
+  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Languages}{: Javascript, C, Shell/Bash, Python, Java, Kotlin, SQL, R, Perl, GraphQL, WebAssembly} \\
-     \textbf{Frameworks}{: Node.js, Express.js, Apollo, Django} \\
-     \textbf{Developer Tools}{: Git, Docker, AWS, Android Studio, Datadog, SumoLogic} \\
-     \textbf{Libraries}{: Tensorflow, pandas, NumPy} \\
+      \textbf{Languages}{: Javascript, C, Shell/Bash, Python, Java, Kotlin, SQL, R, Perl, GraphQL, WebAssembly} \\
+      \textbf{Frameworks}{: Node.js, Express.js, Apollo, Django} \\
+      \textbf{Developer Tools}{: Git, Docker, AWS, Android Studio, Datadog, SumoLogic} \\
+      \textbf{Libraries}{: Tensorflow, pandas, NumPy} \\
     }}
- \end{itemize}
-  
+  \end{itemize}
+
+
 %-----------WORK EXPERIENCE-----------
 \section{Work Experience}
   \resumeSubHeadingListStart
-  
-  \resumeSubheading
+    \resumeSubheading
       {Software Engineer}{September -- December 2021}
       {Wave Financial Inc.}{Toronto, ON}
       \resumeItemListStart 
         \resumeItem{Implemented \href{https://www.apollographql.com/docs/apollo-server/performance/apq/}{\underline{APQs}} on an Apollo GraphQL server with 140+ queries, improving network performance by 93\%}
-         \resumeItem{Utilized Datadog, SumoLogic, and AWS Console to investigate the impact of APQs on network traffic}
-         \resumeItem{Helped increase GraphQL literacy by contributing to an internal training project and presenting at demos}
-         \resumeItem{Fixed bugs and added features to Wave's Django and Node.js APIs}
-         \resumeItem{Participated in Javascript, UI, and Reactive Systems working group meetings to learn about new technologies such as Kafka and the decision making process for adopting new technologies}
+        \resumeItem{Utilized Datadog, SumoLogic, and AWS Console to investigate the impact of APQs on network traffic}
+        \resumeItem{Helped increase GraphQL literacy by contributing to an internal training project and presenting at demos}
+        \resumeItem{Fixed bugs and added features to Wave's Django and Node.js APIs}
+        \resumeItem{Participated in Javascript, UI, and Reactive Systems working group meetings to learn about new technologies such as Kafka and the decision making process for adopting new technologies}
       \resumeItemListEnd
-  
-  \resumeSubheading
+    
+    \resumeSubheading
       {Software Developer}{January -- August 2021}
       {Kings Distributed Systems}{Kingston, ON}
       \resumeItemListStart
@@ -156,7 +150,7 @@
         \resumeItem{Contributed to the Distributed Compute Protocol Node.js microservices and MySQL database}
       \resumeItemListEnd
 
-   \resumeSubheading
+    \resumeSubheading
       {Software Developer}{June -- December 2020}
       {Ontario Ministry of Finance}{Toronto, ON}
       \resumeItemListStart
@@ -164,55 +158,47 @@
         \resumeItem{Wrote a package in Python and R that helps economists analyze data that is used to write Ontario's tax policies}
         \resumeItem{Developed scripts using pandas and NumPy to parse, analyze, and export Excel data to be used in Jupyter Notebooks and RStudio}
       \resumeItemListEnd
-
   \resumeSubHeadingListEnd
-  
-  
+
+
 %-----------PROJECTS-----------
 \section{Projects}
   \resumeSubHeadingListStart
-      \resumeProjectHeading
-          {\textbf{JADCC}}{\href{https://github.com/wiwichips/jadcc}{\underline{github.com/wiwichips/jadcc}}}
-          \resumeItemListStart
-             \resumeItem{Utilized \href{https://dcp.dev/}{\underline{DCP}} to write a distributed Clang compiler using WebAssembly, Javascript, and Node.js }
-          \resumeItemListEnd
-          
-      \resumeProjectHeading
-          {\textbf{ScanX}}{\href{https://github.com/wiwichips/ScanX}{\underline{github.com/wiwichips/ScanX}}}
-          \resumeItemListStart
-            \resumeItem{Contributed to the front-end Kotlin project for the barcode scanning and inventory management mobile app}
-          \resumeItemListEnd
+    \resumeProjectHeading
+      {\textbf{JADCC}}{\href{https://github.com/wiwichips/jadcc}{\underline{github.com/wiwichips/jadcc}}}
+      \resumeItemListStart
+        \resumeItem{Utilized \href{https://dcp.dev/}{\underline{DCP}} to write a distributed Clang compiler using WebAssembly, Javascript, and Node.js }
+      \resumeItemListEnd
+        
+    \resumeProjectHeading
+      {\textbf{ScanX}}{\href{https://github.com/wiwichips/ScanX}{\underline{github.com/wiwichips/ScanX}}}
+      \resumeItemListStart
+        \resumeItem{Contributed to the front-end Kotlin project for the barcode scanning and inventory management mobile app}
+      \resumeItemListEnd
   \resumeSubHeadingListEnd
-
 
 
 %-----------EXTRACURRICULARS & AWARDS-----------
 \section{Extracurriculars \& Awards}
   \resumeSubHeadingListStart
-      \resumeProjectHeading
-          {\textbf{Hack the Job}}{April 2021 -- Present}
-          \resumeItemListStart
-             \resumeItem{Organizing and facilitating \href{https://hackthejob.ca}{\underline{hackathons and career events}} with 200+ participants from 10+ Canadian universities}
-          \resumeItemListEnd
-          
-      \resumeProjectHeading
-          {\textbf{Distributed Summer Hackathon: First Place}}{August 2020}
-          \resumeItemListStart
-             \resumeItem{Developed \href{https://github.com/wiwichips/gcb}{\underline{Gunkstribute}}, an app that utilizes DCP to classify images with Tensorflow, in 36 hours in a team of 2}
-          \resumeItemListEnd
-     
-     \resumeProjectHeading
-          {\textbf{BCOMP}}{September 2018 -- Present}
-          \resumeItemListStart
-             \resumeItem{Created an online community used by 1300+ Bachelor of Computing students at the University of Guelph to share class notes and collaborate with each other according the rules of the university}
-          \resumeItemListEnd
-          
-
+    \resumeProjectHeading
+      {\textbf{Hack the Job}}{April 2021 -- Present}
+      \resumeItemListStart
+        \resumeItem{Organizing and facilitating \href{https://hackthejob.ca}{\underline{hackathons and career events}} with 200+ participants from 10+ Canadian universities}
+      \resumeItemListEnd
+        
+    \resumeProjectHeading
+      {\textbf{Distributed Summer Hackathon: First Place}}{August 2020}
+      \resumeItemListStart
+        \resumeItem{Developed \href{https://github.com/wiwichips/gcb}{\underline{Gunkstribute}}, an app that utilizes DCP to classify images with Tensorflow, in 36 hours in a team of 2}
+      \resumeItemListEnd
+    
+    \resumeProjectHeading
+      {\textbf{BCOMP}}{September 2018 -- Present}
+      \resumeItemListStart
+        \resumeItem{Created an online community used by 1300+ Bachelor of Computing students at the University of Guelph to share class notes and collaborate with each other according the rules of the university}
+      \resumeItemListEnd
   \resumeSubHeadingListEnd
-    
-    
-
- 
 
 %-------------------------------------------
 \end{document}
