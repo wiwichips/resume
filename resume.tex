@@ -7,18 +7,12 @@
 
 \documentclass[letterpaper,11pt]{article}
 
-\usepackage{latexsym}
 \usepackage[empty]{fullpage}
 \usepackage{titlesec}
-\usepackage{marvosym}
-\usepackage[usenames,dvipsnames]{color}
-\usepackage{verbatim}
+\usepackage[usenames,dvipsnames]{xcolor}
 \usepackage{enumitem}
-\usepackage[hidelinks]{hyperref}
+\usepackage{hyperref}
 \usepackage{fancyhdr}
-\usepackage[english]{babel}
-\usepackage{tabularx}
-\input{glyphtounicode}
 
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
@@ -42,7 +36,7 @@
 % Sections formatting
 \titleformat{\section}{
   \vspace{-4pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+}{}{0em}{}[\color{Fuchsia}\titlerule \vspace{-5pt}]
 
 % Ensure that generate pdf is machine readable/ATS parsable
 \pdfgentounicode=1
@@ -93,7 +87,7 @@
 
 %----------HEADING----------
 \begin{center}
-    \textbf{\Huge \scshape Will Pringle} \\ \vspace{1pt}
+    \textbf{\color{Fuchsia} \Huge \scshape Will Pringle} \\ \vspace{1pt}
     \small \href{mailto:willkantorpringle@gmail.com}{\underline{willkantorpringle@gmail.com}} $|$ 
     \href{https://www.linkedin.com/in/will-pringle/}{\underline{linkedin.com/in/will-pringle}} $|$
     \href{https://github.com/wiwichips}{\underline{https://github.com/wiwichips}} $|$
@@ -105,12 +99,11 @@
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {University of Guelph}{Sep. 2018 -- May 2023 (expected)}
+      {University of Guelph}{Sep. 2018 -- May 2023}
       {Bachelor of Computing, Software Engineering, Area of Application in Business Economics}{Guelph, ON}
       \resumeItemListStart
-        \resumeItem{GPA: 3.65/4.0 (85.16\% cumulative)}
+        \resumeItem{84.847\% cumulative average}
         \resumeItem{Awarded \$3,000 Entrance Scholarship}
-        \resumeItem{Deans Honours List in Fall 2018 and Winter 2020}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
 
@@ -119,9 +112,9 @@
 \section{Technical Skills}
   \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-      \textbf{Languages}{: Javascript, C, Shell/Bash, Python, Java, Kotlin, SQL, R, Perl, GraphQL, WebAssembly} \\
+      \textbf{Languages}{: JavaScript, Python, C, Shell/Bash, Golang, Java, Kotlin, SQL, R, GraphQL, WebAssembly} \\
       \textbf{Frameworks}{: Node.js, Express.js, Apollo, Django} \\
-      \textbf{Developer Tools}{: Git, Docker, AWS, Android Studio, Datadog, SumoLogic} \\
+      \textbf{Developer Tools}{: Git, Docker, AWS, Android Studio, Datadog, Kubernetes} \\
       \textbf{Libraries}{: Tensorflow, pandas, NumPy} \\
     }}
   \end{itemize}
@@ -131,24 +124,29 @@
 \section{Work Experience}
   \resumeSubHeadingListStart
     \resumeSubheading
+      {Software Engineer}{May 2022 -- August 2022}
+      {Arctic Wolf}{Waterloo, ON}
+      \resumeItemListStart 
+        \resumeItem{In order to automate the deactivation of security vulnerability scanners, I wrote Go code that appropriately removes data by sending Kafka and RabbitMQ messages}
+        \resumeItem{I wrote a Python script to automate the process of deactivating lists of scanners, speeding up the originally manual process substantially}
+      \resumeItemListEnd
+
+    \resumeSubheading
       {Software Engineer}{September 2021 -- December 2021}
       {Wave Financial Inc.}{Toronto, ON}
       \resumeItemListStart 
-        \resumeItem{Implemented \href{https://www.apollographql.com/docs/apollo-server/performance/apq/}{\underline{APQs}} on an Apollo GraphQL server with 140+ queries, improving network performance by 93\%}
-        \resumeItem{Utilized Datadog, SumoLogic, and AWS Console to investigate the impact of APQs on network traffic}
+        \resumeItem{Implemented server caching using \href{https://www.apollographql.com/docs/apollo-server/performance/apq/}{\underline{APQs}} for over 140+ GraphQL query HTTP requests reducing inbound network traffic by up to 93\% for queries requested millions of times a month}
         \resumeItem{Helped increase GraphQL literacy by contributing to an internal training project and presenting at demos}
-    %%  \resumeItem{Fixed bugs and added features to Wave's Django and Node.js APIs}
-        \resumeItem{Participated in Javascript, UI, and Reactive Systems working group meetings to learn about new technologies such as Kafka and the decision making process for adopting new technologies}
       \resumeItemListEnd
     
     \resumeSubheading
       {Software Developer}{January 2021 -- August 2021}
-      {Kings Distributed Systems}{Kingston, ON}
+      {Distributive (Formerly known as Kings Distributed Systems)}{Kingston, ON}
       \resumeItemListStart
-        \resumeItem{Implemented a key feature that allows the company to take commission for selected compute jobs that are sent over their network}
+        \resumeItem{Implemented a scraping feature for payments alloing a third party to make a commission off of paid compute}
         \resumeItem{Fixed critical race condition bugs in the transport layer affecting session ID generation, improving network security}
     %%  \resumeItem{Re-branded a client facing frontend portal for a research study with 1000+ participants using DCP}
-        \resumeItem{Contributed to the DCP Node.js microservices used for scheduling, tracking, and executing the distributed code, as well as the MySQL database used to manage accounts and transactions}
+    %%  \resumeItem{Contributed to the DCP Node.js microservices used for scheduling, tracking, and executing the distributed code, as well as the MySQL database used to manage accounts and transactions}
     %%  \resumeItem{Fixing bugs and removing memory leaks from the in-house testing framework}
         \resumeItem{Onboarded 10 new developers to the team; introducing them to the codebase and assisting with setting up development environments}
       \resumeItemListEnd
@@ -159,7 +157,6 @@
       \resumeItemListStart
         \resumeItem{Automated data entry and modelling using Python, reducing time for a critical monthly task by 99\%}
         \resumeItem{Wrote a package in Python and R that helps economists analyze data that is used to write Ontario's tax policies}
-        \resumeItem{Developed scripts using pandas and NumPy to parse, analyze, and export Excel data to be used in Jupyter Notebooks and RStudio}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
 
@@ -187,20 +184,24 @@
     \resumeProjectHeading
       {\textbf{Hack the Job}}{April 2021 -- Present}
       \resumeItemListStart
-        \resumeItem{Co-founded and run \href{https://hackthejob.ca}{\underline{hackathons and career events}} with 200+ participants from 10+ Canadian universities}
+        \resumeItem{Co-founded a \href{https://hackthejob.ca}{hackathon organization} that has helped over 200 participants from 10+ universities learn industry tools and advance their careers}
+    %%    \resumeItem{Facilitated events, judged hackathon submissions, liasoned with business partners and lead the marketing}
       \resumeItemListEnd
         
-    \resumeProjectHeading
-      {\textbf{Distributed Summer Hackathon: First Place}}{August 2020}
-      \resumeItemListStart
-        \resumeItem{Developed \href{https://github.com/wiwichips/gcb}{\underline{Gunkstribute}}, an app that utilizes parallel computing to classify images with Tensorflow, in 36 hours}
-      \resumeItemListEnd
-    
+   
     \resumeProjectHeading
       {\textbf{BCOMP}}{September 2018 -- Present}
       \resumeItemListStart
-        \resumeItem{Maintaining an online community used by 1300+ Bachelor of Computing students at the University of Guelph to share class notes and collaborate with each other within the rules of the university}
+        \resumeItem{Maintaining an online community used by 1400+ Bachelor of Computing students at the University of Guelph to share class notes and collaborate with each other within the rules of the university}
       \resumeItemListEnd
+
+
+    \resumeProjectHeading
+      {\textbf{Distributed Summer Hackathon: First Place}}{August 2020}
+      \resumeItemListStart
+        \resumeItem{Developed \href{https://github.com/wiwichips/gcb}{Gunkstribute}, an app that utilizes parallel computing to classify images with Tensorflow, in 36 hours}
+      \resumeItemListEnd
+ 
   \resumeSubHeadingListEnd
 
 %-------------------------------------------
