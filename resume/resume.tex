@@ -1,0 +1,156 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Author:
+% Claud D. Park <posquit0.bj@gmail.com>
+% http://www.posquit0.com
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Configuration
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Themes: Awesome-CV
+\documentclass[]{awesome-cv}
+\usepackage{textcomp}
+%%% Override a directory location for fonts(default: 'fonts/')
+\fontdir[fonts/]
+
+%%% Configure a directory location for sections
+\newcommand*{\sectiondir}{resume/}
+
+%%% Override color
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+%% Color for highlight
+% Define your custom color if you don't like awesome colors
+\colorlet{awesome}{awesome-red}
+%\definecolor{awesome}{HTML}{CA63A8}
+%% Colors for text
+%\definecolor{darktext}{HTML}{414141}
+%\definecolor{text}{HTML}{414141}
+%\definecolor{graytext}{HTML}{414141}
+%\definecolor{lighttext}{HTML}{414141}
+
+%%% Override a separator for social informations in header(default: ' | ')
+%\headersocialsep[\quad\textbar\quad]
+    \begin{document}
+    
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Profile
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{center}
+	\headerfirstnamestyle{Will} \headerlastnamestyle{Pringle} \\
+	\vspace{2mm}
+	{\faEnvelope\ willkantorpringle@gmail.com} | {\faMobile\ github.com/wiwichips} | {\faMapMarker\ linkedin.com/in/will-pringle}
+\end{center}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Education
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\cvsection{Education}
+\begin{cventries}
+	\cventry
+	{Bachelors in Software Engineering}
+	{University of Guelph}
+	{Guelph, Ontario}
+	{Sep 2018 – April 2022}
+	{GPA: 3.65}
+\end{cventries}
+
+\vspace{-2mm}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Experience
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\cvsection{Experience}
+\begin{cventries}
+	\cventry
+	{Software Developer}
+	{Kings Distributed Systems}
+	{Kingston, Canada}
+	{Jan 2020 – Present}
+	{\begin{cvitems}
+		\item {NodeJS, MySQL, Linux, HTML, CSS}
+		\item {Implemented payment commissions, a feature that transfers a specified fraction of a payment to a separate account, allowing KingsDS to make revenue for every workload sent over their network.}
+		\item {Fixed critical race condition bugs in the network transport layer of the system}
+		\item {Re-branded a client facing frontend portal for a research study with over 100 participants using the Distributed Compute Protocol.}
+		\end{cvitems}}
+	\cventry
+	{Research Analyst \& Software Developer}
+	{Ontario Ministry of Finance}
+	{Toronto, Canada}
+	{June 2020 – December 2020}
+	{\begin{cvitems}
+		\item {Python, R, Jupyter Notebook, SQL}
+		\item {Automated data entry and modeling using Python reducing time by 99\%}
+		\item {Wrote an internal Python and R package to help economists analyze tax data used to write policy that affects millions of Ontarians}
+		\item {Developed scripts to parse and analyze Excel data into a usable format using libraries such as Pandas and Numpy}
+		\end{cvitems}}
+\end{cventries}
+\cvsection{Skills}
+\begin{cventries}
+	\cventry
+	{}
+	{\def\arraystretch{1.15}{\begin{tabular}{ l l }
+		Programming Languages:  & {\skill{ JavaScript, C, Python, Kotlin, Java, Shell / Bash, SQL, R, Perl}} \\
+		Technologies:  & {\skill{ Node.js, Linux / Unix, Android Studio, Linux Containers, Express.js, Tensorflow}} \\
+		\end{tabular}}}
+	{}
+	{}
+	{}
+\end{cventries}
+
+\vspace{-7mm}
+\cvsection{Projects}
+\begin{cventries}
+	\cventry
+	{• Lead a team to create an open source simple barcode scanning and inventory management system • Implemented a frontend search system that queries a database for items previously scanned}
+	{ScanX}
+	{Kotlin, Java, Android Studio, Python}
+	{https://github.com/wiwichips/ScanX}
+	{}
+	
+	\vspace{-5mm}
+	\cventry
+	{• Developed an image classification program using Tensorflow to utilize a highly distributed supercomputer that gives photos in a photo gallery more descriptive names efficiently with parallelization}
+	{Gunkstribute}
+	{Node.JS, JavaScript, Tensorflow}
+	{https://github.com/wiwichips/gcb}
+	{}
+	
+	\vspace{-5mm}
+	\cventry
+	{• Lightweight unix shell that supports piping, redirection, variable globbing, changing directories and exiting}
+	{SQUISH}
+	{C}
+	{https://github.com/wiwichips/squish}
+	{}
+	
+	\vspace{-5mm}
+\end{cventries}
+\cvsection{Awards and Extracurriculars}
+\begin{cvhonors}
+	\cvhonor
+	{(First Place) Distribued Summer Hackathon}
+	{Collaborated in a team of two under a 36 hour period to develop Gunkstribute, a project that utilizes DCP\textquotesingle{}s highly distributed supercomputer to classify images in a large photo gallery efficiently}
+	{Distributed Compute Labs}
+	{August 2020}
+	\cvhonor
+	{(Second Place) Amazon Day Datapath}
+	{Competed to learn Amazon\textquotesingle{}s new query langugae Datapth to solve query related problems}
+	{Amazon}
+	{Jan 2019}
+	\cvhonor
+	{BCOMP Forum Student Organization - Founder}
+	{• Grew an online community of over 1100 Computer Science students to run events and collaborate • Organized and ran a sponsored hackathon}
+	{BCOMP}
+	{September 2018 - Present}
+\end{cvhonors}
+\ 
+\end{document}
