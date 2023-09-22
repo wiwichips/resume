@@ -5,13 +5,14 @@
 % License : MIT
 %------------------------
 
+
 \documentclass[letterpaper,11pt]{article}
 
 \usepackage[empty]{fullpage}
 \usepackage{titlesec}
 \usepackage[usenames,dvipsnames]{xcolor}
 \usepackage{enumitem}
-\usepackage{hyperref}
+\usepackage[hidelinks]{hyperref}
 \usepackage{fancyhdr}
 
 \pagestyle{fancy}
@@ -35,7 +36,7 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
+  \vspace{-10pt}\scshape\raggedright\large
 }{}{0em}{}[\color{Fuchsia}\titlerule \vspace{-5pt}]
 
 % Ensure that generate pdf is machine readable/ATS parsable
@@ -99,11 +100,12 @@
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {University of Guelph}{Sep. 2018 -- May 2023}
+      {University of Guelph}{September 2018 -- May 2023}
       {Bachelor of Computing, Software Engineering, Area of Application in Business Economics}{Guelph, ON}
       \resumeItemListStart
         \resumeItem{84.847\% cumulative average}
-        \resumeItem{VP Event Planner for the \emph{Society of Computing and Information Science}. Running a programming competition}
+        \resumeItem{VP Event Planner for the \textbf{Society of Computing and Information Science}}
+        \resumeItem{Run and organize the \textbf{Guelph Programming Competition} for competitive programming}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
 
@@ -123,23 +125,23 @@
 \section{Work Experience}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {Software Engineer (Backend)}{May 2022 -- August 2022}
+      {Software Engineer Intern (Backend)}{May 2022 -- August 2022}
       {Arctic Wolf}{Waterloo, ON}
       \resumeItemListStart 
-        \resumeItem{Implemented a feature in Go that removes data across a distributed system by sending Kafka and RabbitMQ messages in order to automate the deactivation of security vulnerability scanners}
-        \resumeItem{Wrote a Python script to automate the process of deactivating lists of scanners, speeding up the originally manual process substantially}
+        \resumeItem{Implemented a feature in \textbf{Go} that removes data across a distributed system by sending \textbf{Kafka} and \textbf{RabbitMQ} messages in order to automate the deactivation of security vulnerability scanners}
+        \resumeItem{Wrote a \textbf{Python} script to automate the process of deactivating lists of scanners, speeding up the originally manual process substantially}
       \resumeItemListEnd
 
     \resumeSubheading
-      {Software Engineer (API)}{September 2021 -- December 2021}
+      {Software Engineer Intern (API)}{September 2021 -- December 2021}
       {Wave Financial Inc.}{Toronto, ON}
       \resumeItemListStart 
-        \resumeItem{Implemented API request caching using \href{https://www.apollographql.com/docs/apollo-server/performance/apq/}{\underline{Automatic Persisted Queries}} for over 140+ GraphQL query HTTP requests reducing inbound network traffic by up to 93\% for queries requested millions of times a month}
-        \resumeItem{Helped increase GraphQL literacy by contributing to an internal training project and presenting at demos}
+        \resumeItem{Implemented API request caching using \href{https://www.apollographql.com/docs/apollo-server/performance/apq/}{\textbf{Automatic Persisted Queries}} for over 140+ \textbf{GraphQL} query \textbf{HTTP} requests reducing inbound network traffic by up to 93\% for queries requested millions of times a month}
+        \resumeItem{Helped increase \textbf{GraphQL} literacy by contributing to an internal training project and presenting at demos}
       \resumeItemListEnd
     
     \resumeSubheading
-      {Software Developer (Fullstack)}{January 2021 -- August 2021}
+      {Software Developer Intern (Fullstack)}{January 2021 -- August 2021}
       {Distributive (Formerly known as Kings Distributed Systems)}{Kingston, ON}
       \resumeItemListStart
         \resumeItem{Implemented a scraping feature for payments allowing a third party to make a commission off of paid compute}
@@ -151,11 +153,11 @@
       \resumeItemListEnd
 
     \resumeSubheading
-      {Research Analyst}{June 2020 -- December 2020}
+      {Research Analyst Intern}{June 2020 -- December 2020}
       {Ontario Ministry of Finance}{Toronto, ON}
       \resumeItemListStart
-        \resumeItem{Automated data entry and modelling using Python, reducing time for a critical monthly task by 99\%}
-        \resumeItem{Wrote a package in Python and R that helps economists analyze data that is used to write Ontario's tax policies}
+        \resumeItem{Automated data entry and modelling using \textbf{Python}, reducing time for a critical monthly task by 99\%}
+        \resumeItem{Wrote a package in \textbf{Python} and \textbf{R} that helps economists analyze data that is used to write Ontario's tax policies}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
 
@@ -166,13 +168,13 @@
     \resumeProjectHeading
       {\textbf{JADCC}}{\href{https://github.com/wiwichips/jadcc}{\underline{github.com/wiwichips/jadcc}}}
       \resumeItemListStart
-        \resumeItem{Utilized \href{https://dcp.dev/}{\underline{DCP}} to write a distributed Clang compiler using WebAssembly, Javascript, and Node.js }
+        \resumeItem{Utilized \href{https://dcp.dev/}{\textbf{DCP}} to write a distributed Clang compiler using \textbf{WebAssembly}, \textbf{Javascript}, and \textbf{Node.js} }
       \resumeItemListEnd
         
     \resumeProjectHeading
       {\textbf{ScanX}}{\href{https://github.com/wiwichips/ScanX}{\underline{github.com/wiwichips/ScanX}}}
       \resumeItemListStart
-        \resumeItem{Built an Android app in Kotlin allowing for barcode scanning and inventory management} 
+        \resumeItem{Built an Android app in \textbf{Kotlin} allowing for barcode scanning and inventory management} 
       \resumeItemListEnd
   \resumeSubHeadingListEnd
 
@@ -191,14 +193,14 @@
     \resumeProjectHeading
       {\textbf{BCOMP}}{September 2018 -- Present}
       \resumeItemListStart
-        \resumeItem{Founder and president of an online community used by 1500+ Bachelor of Computing students at the University of Guelph to share class notes and collaborate with each other within the rules of the university}
+        \resumeItem{Founder and president of an online community used by 1600+ Bachelor of Computing students at the University of Guelph to share class notes and collaborate with each other within the rules of the university}
       \resumeItemListEnd
 
 
     \resumeProjectHeading
       {\textbf{Distributed Summer Hackathon: First Place Award}}{August 2020}
       \resumeItemListStart
-        \resumeItem{Developed \href{https://github.com/wiwichips/gcb}{a program} that utilizes a parallel computing API to classify images in a photo album with Tensorflow}
+        \resumeItem{Developed \href{https://github.com/wiwichips/gcb}{a program} that utilizes a parallel computing API to classify images in a photo album with \textbf{Tensorflow}}
       \resumeItemListEnd
  
   \resumeSubHeadingListEnd
