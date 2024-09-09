@@ -101,9 +101,9 @@
 \section{Technical Skills}
   \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-      \textbf{Languages}{: JavaScript, Python, Rust, C, Shell/Bash, Golang, Java, Kotlin, SQL, R, GraphQL, WebAssembly} \\
+      \textbf{Languages}{: JavaScript, Python, Rust, C, Golang, Shell/Bash, Java, SQL, GraphQL} \\
       \textbf{Frameworks and Libraries}{: Node.js, Express.js, React, Apollo, Django, Tensorflow, pandas, NumPy} \\
-      \textbf{Developer Tools}{: Git, Docker, AWS, Android Studio, Datadog, Kubernetes} \\
+      \textbf{Developer Tools}{: Git, GitHub / GitHub Actions, Docker, AWS, Android Studio, Datadog, Kubernetes} \\
     }}
   \end{itemize}
 
@@ -115,16 +115,13 @@
       {Software Developer}{May 2023 -- Present}
       {\href{https://distributive.network/}{\underline{Distributive}} (Formerly known as Kings Distributed Systems)}{Kingston, ON}
       \resumeItemListStart 
-        \resumeItem{Developed a versatile \textbf{REST API} integrated with \textbf{OAuth2} using \textbf{NodeJS} and \textbf{Express}, broadening DCP's accessibility across various programming languages and enhancing platform usability. \href{https://github.com/Distributive-Network/dcp-rest}{\underline{Source code on GitHub}}}
-        \resumeItem{Developed DCP Worktimes which gives DCP the capability for code to execute in a different runtimes and environments.  (\textit{Launch article coming soon...})}
-        \begin{itemize}
-            \item Made an \href{https://github.com/Distributive-Network/custom-worker}{\underline{NPM package}} in \textbf{TypeScript} as an open API for third party developers to use to create their own custom Worktimes. (\textit{Not published yet, coming soon...})
-            \item Added the "\href{https://github.com/pyodide/pyodide}{Pyodide} Worktime" allowing users to easily deploy Python workloads executed in WASM runtimes
-            \item Currently developing a MicroVM Worktime based on \href{https://github.com/firecracker-microvm/firecracker}{Firecracker}
-        \end{itemize}
-        \resumeItem{Implemented OAuth2-based SDK authorization for enhanced security and convenience for SDK users}
-        \resumeItem{Created a Kubernetes manifest.yaml generator backend, enabling users to effortlessly configure and deploy compute clusters, markedly improving setup efficiency. \href{https://distributive.network/docker}{\underline{Try it here}}}
-        \resumeItem{Part time Developer Advocate for \href{https://github.com/Distributive-Network/PythonMonkey}{\underline{PythonMonkey}}. Produced video content, wrote articles and shared the project in developer communities \textbf{resulting in a growth of 0 to 300 stars on GitHub within one month} (currently 500). Wrote a \href{https://medium.com/p/4a8efce2e598}{\underline{Launch Article}} for PythonMonkey featured in JavaScript Weekly, Node Weekly, and other popular newsletters which revived 2.7K Views, 1.4K Reads and 157 claps}
+        \resumeItem{Designed and built a WebHook server in \textbf{Go/Golang} for accessing AI inference predictions from \href{https://distributive.network/diana}{\underline{Diana}}}
+        \resumeItem{Developed \href{https://distributive.network/platform}{\underline{DCP}} Worktimes enabling distributed workloads to execute in a variety of runtime environments}
+        \resumeItem{Created the \textbf{Pyodide} Worktime, enabling distributed \textbf{Python} to execute in a \textbf{WASM} runtime}
+        \resumeItem{Designed and implemented the \textbf{Python} SDK for DCP (\href{https://github.com/Distributive-Network/bifrost2}{\underline{Source code on GitHub}}) ( \texttt{\$ pip install dcp}) }
+        \resumeItem{Developed a versatile \textbf{REST API} integrated with \textbf{OAuth2} using \textbf{NodeJS} and \textbf{Express}, broadening DCP's accessibility across various programming languages and enhancing platform usability (\href{https://github.com/Distributive-Network/dcp-rest}{\underline{Source code on GitHub}})}
+        \resumeItem{Created a Kubernetes \texttt{manifest.yaml} generator enabling system administrators to configure and deploy DCP compute clusters efficiently. \href{https://distributive.network/docker}{\underline{Try it here}}}
+        \resumeItem{Promoted an open source project called \href{https://github.com/Distributive-Network/PythonMonkey}{\underline{PythonMonkey}} resulting in 300+ stars on GitHub in 1 month (800+ now). Created \href{https://youtu.be/UmlSryXsh30}{\underline{videos}}, wrote \href{https://distributive.network/jobs/python-monkey}{\underline{articles}}, and discussed the project with journalists (featured in \href{https://thenewstack.io/python-meets-javascript-wasm-with-the-magic-of-pythonmonkey/}{\underline{The New Stack}}, Node Weekly and JavaScript Weekly).}
       \resumeItemListEnd
 
     \resumeSubheading
@@ -140,7 +137,7 @@
       {Software Engineer Intern (API)}{September 2021 -- December 2021}
       {Wave Financial Inc.}{Toronto, ON}
       \resumeItemListStart 
-        \resumeItem{Implemented API request caching using \href{https://www.apollographql.com/docs/apollo-server/performance/apq/}{\textbf{Automatic Persisted Queries}} for over 140+ \textbf{GraphQL} query \textbf{HTTP} requests reducing inbound network traffic by up to 93\% for queries requested millions of times a month}
+        \resumeItem{Implemented API request caching using \href{https://www.apollographql.com/docs/apollo-server/performance/apq/}{\textbf{Automatic Persisted Queries}} for over 140 \textbf{GraphQL} query \textbf{HTTP} requests reducing inbound network traffic by up to 93\% for queries requested millions of times a month}
         \resumeItem{Helped increase \textbf{GraphQL} literacy by contributing to an internal training project and presenting at demos}
       \resumeItemListEnd
     
@@ -148,8 +145,8 @@
       {Software Developer Intern (Fullstack)}{January 2021 -- August 2021}
       {Distributive (Formerly known as Kings Distributed Systems)}{Kingston, ON}
       \resumeItemListStart
-        \resumeItem{Implemented a scraping feature for payments allowing a third party to make a commission off of paid compute}
-        \resumeItem{Fixed critical race condition bugs in the transport layer affecting session ID generation, improving network security}
+        \resumeItem{Implemented a scraping feature for payments, enabling a third party to earn commissions on paid compute}
+        \resumeItem{Fixed race condition bugs in an in-house network protocol affecting session ID generation, improving security}
     %%  \resumeItem{Re-branded a client facing frontend portal for a research study with 1000+ participants using DCP}
     %%  \resumeItem{Contributed to the DCP Node.js microservices used for scheduling, tracking, and executing the distributed code, as well as the MySQL database used to manage accounts and transactions}
     %%  \resumeItem{Fixing bugs and removing memory leaks from the in-house testing framework}
@@ -175,7 +172,7 @@
       \resumeItemListStart
         \resumeItem{3.7 GPA (86\% cumulative average)}
         \resumeItem{VP Event Planner for the \textbf{Society of Computing and Information Science}}
-        \resumeItem{Run and organize the \textbf{Guelph Programming Competition} for competitive programming}
+        \resumeItem{Ran and organized the \textbf{Guelph Programming Competition} for competitive programming}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
 
@@ -188,39 +185,9 @@
       \resumeItemListStart
         \resumeItem{Image processing toolbox in the browser using \textbf{Rust} compiled to \textbf{WebAssembly} for the core logic and \textbf{React}} 
         \resumeItem{Able to efficiently processes a live webcam feed or allow for images to be uploaded}
+        \resumeItem{Try it out! \href{https://wiwichips.github.io/imgprobox/}{\underline{wiwichips.github.io/imgprobox/}}}
       \resumeItemListEnd
 
-    \resumeProjectHeading
-      {\textbf{JADCC}}{\href{https://github.com/wiwichips/jadcc}{\underline{github.com/wiwichips/jadcc}}}
-      \resumeItemListStart
-        \resumeItem{Utilized \href{https://dcp.dev/}{\textbf{DCP}} to write a distributed Clang compiler using \textbf{WebAssembly}, \textbf{Javascript}, and \textbf{Node.js} }
-      \resumeItemListEnd
-        
-    \resumeProjectHeading
-      {\textbf{ScanX}}{\href{https://github.com/wiwichips/ScanX}{\underline{github.com/wiwichips/ScanX}}}
-      \resumeItemListStart
-        \resumeItem{Built an Android app in \textbf{Kotlin} allowing for barcode scanning and inventory management} 
-      \resumeItemListEnd
-
-    \resumeProjectHeading
-      {\textbf{Hack the Job}}{April 2021 -- Present}
-      \resumeItemListStart
-        \resumeItem{Co-founded a \href{https://web.archive.org/web/20220617192206/https://hackthejob.ca/}{hackathon organization} that has helped over 200 participants from 10+ universities learn industry tools and advance their careers. This involves hosting speakers and running hackathons}
-        \resumeItem{Facilitated events, \href{https://youtu.be/yMrGF7CUkKs?t=2631}{judged hackathon submissions}, liasoned with corporate sponors and led marketing}
-      \resumeItemListEnd
-        
-    \resumeProjectHeading
-      {\textbf{BCOMP}}{September 2018 -- September 2023}
-      \resumeItemListStart
-        \resumeItem{Founder and president of an online community used by 2000+ Bachelor of Computing students at the University of Guelph to share class notes and collaborate with each other within the rules of the university}
-      \resumeItemListEnd
-
-    \resumeProjectHeading
-      {\textbf{Distributed Summer Hackathon: First Place Award}}{August 2020}
-      \resumeItemListStart
-        \resumeItem{Developed \href{https://github.com/wiwichips/gcb}{a program} that utilizes a parallel computing API to classify images in a photo album with \textbf{Tensorflow} across multiple computers}
-      \resumeItemListEnd
- 
   \resumeSubHeadingListEnd
 
 
