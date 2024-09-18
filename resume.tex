@@ -35,6 +35,7 @@
 \setlength{\tabcolsep}{0in}
 
 % Sections formatting
+
 \titleformat{\section}{
   \vspace{-10pt}\scshape\raggedright\large
 }{}{0em}{}[\color{Blue}\titlerule \vspace{-5pt}]
@@ -81,6 +82,13 @@
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
+\hypersetup{
+  colorlinks=true,
+  urlcolor=DarkBlue,
+  linkcolor=DarkBlue
+}
+
+\definecolor{DarkBlue}{RGB}{0, 0, 139}
 %-------------------------------------------
 %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -150,7 +158,7 @@
       {Software Engineer Intern (API)}{September 2021 -- December 2021}
       {Wave Financial Inc.}{Toronto, ON}
       \resumeItemListStart 
-        \resumeItem{Implemented API request caching using \href{https://www.apollographql.com/docs/apollo-server/performance/apq/}{\textbf{Automatic Persisted Queries}} for over 140 \textbf{GraphQL} query \textbf{HTTP} requests reducing inbound network traffic by up to 93\% for queries requested millions of times a month}
+        \resumeItem{Implemented API request caching using \href{https://www.apollographql.com/docs/apollo-server/performance/apq/}{\underline{Automatic Persisted Queries}} for over 140 \textbf{GraphQL} query \textbf{HTTP} requests reducing inbound network traffic by up to 93\% for queries requested millions of times a month}
         \resumeItem{Helped increase \textbf{GraphQL} literacy by contributing to an internal training project and presenting at demos}
       \resumeItemListEnd
     
