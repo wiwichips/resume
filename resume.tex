@@ -36,9 +36,11 @@
 
 % Sections formatting
 
+\definecolor{mypink2}{RGB}{255, 0, 191}
+
 \titleformat{\section}{
   \vspace{-10pt}\scshape\raggedright\large
-}{}{0em}{}[\color{Blue}\titlerule \vspace{-5pt}]
+}{}{0em}{}[\color{mypink2}\titlerule \vspace{-5pt}]
 
 % Ensure that generate pdf is machine readable/ATS parsable
 \pdfgentounicode=1
@@ -84,11 +86,11 @@
 
 \hypersetup{
   colorlinks=true,
-  urlcolor=DarkBlue,
-  linkcolor=DarkBlue
+  urlcolor=Darkmypink2,
+  linkcolor=Darkmypink2
 }
 
-\definecolor{DarkBlue}{RGB}{0, 0, 139}
+\definecolor{Darkmypink2}{RGB}{0, 0, 139}
 %-------------------------------------------
 %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -96,7 +98,7 @@
 
 %----------HEADING----------
 \begin{center}
-    \textbf{\color{Blue} \Huge \scshape Will Pringle} \\ \vspace{1pt}
+    \textbf{\color{mypink2} \Huge \scshape Will Pringle} \\ \vspace{1pt}
     \small \href{mailto:willkantorpringle@gmail.com}{\underline{willkantorpringle@gmail.com}} $|$ 
     \href{https://www.linkedin.com/in/will-pringle/}{\underline{linkedin.com/in/will-pringle}} $|$
     \href{https://github.com/wiwichips}{\underline{https://github.com/wiwichips}} $|$
@@ -168,7 +170,7 @@
       \resumeItemListStart
         \resumeItem{Implemented a scraping feature for payments, enabling a third party to earn commissions on paid compute}
         \resumeItem{Fixed race condition bugs in an in-house network protocol affecting session ID generation improving security}
-        \resumeItem{Re-branded a frontend dashboard used for a research study with 1000+ participants using CSS}
+        \resumeItem{Re-branded a frontend dashboard used for a research study with 1000+ participants using \textbf{CSS}}
     %%  \resumeItem{Contributed to the DCP Node.js microservices used for scheduling, tracking, and executing the distributed code, as well as the MySQL database used to manage accounts and transactions}
     %%  \resumeItem{Fixing bugs and removing memory leaks from the in-house testing framework}
     %%  \resumeItem{Onboarded 10 new developers to the team; introducing them to the codebase and assisting with setting up development environments}
