@@ -53,8 +53,9 @@
   }
 }
 
+% note that the vspace 1pt was -2pt before, this controls space between things
 \newcommand{\resumeSubheading}[4]{
-  \vspace{-2pt}\item
+  \vspace{1pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
@@ -127,9 +128,8 @@
       \resumeItemListStart 
         \resumeItem{Designed and built a Webhook server in \textbf{Go} for accessing \textbf{AI model inferences} deployed to \href{https://distributive.network/diana}{\underline{DIANA}}}
         %%\resumeItem{Developed \href{https://distributive.network/platform}{\underline{DCP}} Worktimes enabling distributed workloads to execute in a variety of runtime environments}
-        \resumeItem{Developed an API which enables users to specify execution environments in distributed compute nodes}
-        \resumeItem{Created a runtime for distributed \textbf{Python} execution on \href{https://distributive.network/platform}{\underline{DCP}} using \textbf{WebAssembly} and \textbf{Pyodide}}
-        \resumeItem{Designed and implemented the \textbf{Python} SDK for DCP (\href{https://github.com/Distributive-Network/bifrost2}{\underline{Source code on GitHub}})}
+        \resumeItem{Created a runtime for distributed \textbf{Python} execution on \href{https://distributive.network/platform}{\underline{DCP}} built on \textbf{WebAssembly} and \textbf{Pyodide}}
+        \resumeItem{Designed and implemented a \textbf{Python} SDK for distributed computing via DCP (\href{https://github.com/Distributive-Network/bifrost2}{\underline{Source code on GitHub}})}
         \resumeItem{Planned Quarterly OKRs, mentored developers, and scoped MVPs for API and Toolchain products for DCP}
       \resumeItemListEnd
 
@@ -137,9 +137,9 @@
       {Software Developer}{May 2023 -- June 2024}
       {\href{https://distributive.network/}{\underline{Distributive}}}{Kingston, ON}
       \resumeItemListStart 
-        \resumeItem{Developed a versatile \textbf{REST API} integrated with \textbf{OAuth2.0} using \textbf{NodeJS} and \textbf{Express}, broadening DCP's accessibility across various programming languages and enhancing platform usability}
         \resumeItem{Implemented OAuth2.0-based SDK authorization for enhanced security and convenience for SDK users}
         \resumeItem{Created a Kubernetes \texttt{manifest.yaml} generator to configure and deploy DCP compute clusters efficiently}
+        \resumeItem{Developed a \textbf{REST API} for distributed computing integrated with \textbf{OAuth2.0} using \textbf{NodeJS} and \textbf{Express}}
         \resumeItem{Promoted the open source project \href{https://github.com/Distributive-Network/PythonMonkey}{\underline{PythonMonkey}} resulting in 300+ stars on GitHub in 1 month (800+ now)}
       	\resumeItemListStart 
         	\resumeItem{Designed in \textbf{Figma} and implemented the \href{https://pythonmonkey.io/}{\underline{pythonmonkey.io}} landing page using \textbf{HTML}, \textbf{JS} and \textbf{CSS}}
